@@ -13,4 +13,12 @@ int main() {
   std::cout << "5: Print Wallet" << std::endl;
   // 6 Continue
   std::cout << "6 Continue" << std::endl;
+  std::cout << "-----------------------" << std::endl;
+  std::cout << "Enter your choice: ";
+
+  int choice;
+
+  std::cin >> choice;
+
+  std::cout << "You Chose: " << choice << std::endl;
 }
