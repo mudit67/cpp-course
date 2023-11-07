@@ -22,29 +22,47 @@ int getUserChoice() {
   std::cout << "You Chose: " << ch << std::endl;
   return ch;
 }
+void printHelp() {
+  std::cout << "Help - Your Aim is to make money. Analyze the market and "
+               "make bids and offers."
+            << std::endl;
+}
+void printMarketStats() { std::cout << "Market Looks good." << std::endl; }
+
+void AcceptOffer() {
+
+  std::cout << "Make an Offer - Enter the amount: " << std::endl;
+}
+void AcceptBid() {
+
+  std::cout << "Make a bid - Enter the amount: " << std::endl;
+}
+void printWallet() { std::cout << "Your Wallet is emplty!" << std::endl; }
+void progressTimeFrame() {
+
+  std::cout << "Going to next time timeframe" << std::endl;
+}
 void handleUserChoice(int userChoice) {
   if (userChoice == 0) {
     std::cout << "Invalid Choice. Choose 1-6" << std::endl;
   }
   if (userChoice == 1) {
-    std::cout << "Help - Your Aim is to make money. Analyze the market and "
-                 "make bids and offers."
-              << std::endl;
+    printHelp();
   }
   if (userChoice == 2) {
-    std::cout << "Market Looks good." << std::endl;
+    printMarketStats();
   }
   if (userChoice == 3) {
-    std::cout << "Make an Offer - Enter the amount: " << std::endl;
+    AcceptOffer();
   }
   if (userChoice == 4) {
-    std::cout << "Make a bid - Enter the amount: " << std::endl;
+    AcceptBid();
   }
   if (userChoice == 5) {
-    std::cout << "Your Wallet is emplty!" << std::endl;
+    printWallet();
   }
   if (userChoice == 6) {
-    std::cout << "Going to next time timeframe" << std::endl;
+    progressTimeFrame();
   }
 }
 int main() {
